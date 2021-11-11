@@ -2,13 +2,13 @@
 
 - AES는 SPN(Substitution Permutation Network)이라는 암호 구조를 사용하는 암호화 기법이다. 
 
-![21770E4757A82E4A08](https://user-images.githubusercontent.com/67867993/141345213-73361ed8-9c03-418a-ba6c-484e0161b0ea.png)
+> ![21770E4757A82E4A08](https://user-images.githubusercontent.com/67867993/141345213-73361ed8-9c03-418a-ba6c-484e0161b0ea.png)
 
 - SPN은 곱 암호의 일종으로, S-BOX를 사용하는 치환과 P-BOX를 사용하는 순열을 여러 라운드에 걸쳐 반복한다. -> 라운드마다 입력 전체에 라운드 함수를 적용하기 때문에 같은 수의 라운드를 사용할 때 SPN이 더 높은 암호학적 안정성을 가진다.
 
 ## AES의 구조
 
-![999A973359CB15A622](https://user-images.githubusercontent.com/67867993/141346334-0f8aace2-7464-469b-8e06-8e9b107d8c79.jpeg)
+> ![999A973359CB15A622](https://user-images.githubusercontent.com/67867993/141346334-0f8aace2-7464-469b-8e06-8e9b107d8c79.jpeg)
 
 - AES 암호화 방식은 라운드마다 127비트 크기의 블록을 암호화하는 블록 암호이다. 
 - AES 암호화 키의 길이는 128, 192, 256비트 중 하나를 선택할 수 있으며, 라운드 수는 키의 길이에 따라서 10, 12, 14로 결정된다.
