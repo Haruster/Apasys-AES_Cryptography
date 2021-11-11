@@ -1,4 +1,4 @@
-# AES 암호화 기법이란?
+- # AES 암호화 기법이란?
 
 - AES는 SPN(Substitution Permutation Network)이라는 암호 구조를 사용하는 암호화 기법이다. 
 
@@ -6,7 +6,7 @@
 
 - SPN은 곱 암호의 일종으로, S-BOX를 사용하는 치환과 P-BOX를 사용하는 순열을 여러 라운드에 걸쳐 반복한다. -> 라운드마다 입력 전체에 라운드 함수를 적용하기 때문에 같은 수의 라운드를 사용할 때 SPN이 더 높은 암호학적 안정성을 가진다.
 
-## AES의 구조
+- ## AES의 구조
 
 > ![999A973359CB15A622](https://user-images.githubusercontent.com/67867993/141346334-0f8aace2-7464-469b-8e06-8e9b107d8c79.jpeg)
 
