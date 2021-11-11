@@ -21,3 +21,16 @@
 
 - AES 암호화 방식은 암호화를 할 때, 가장 먼저 각 블록을 4행 4열의 상태 배열로 재구성하며 상태 배열의 각 칸에는 8비트 즉, 1바이트가 저장된다.
 
+
+# AES 암호화 알고리즘 (ECB, CBC)
+
+- ECB(Electronic Code Block) Mode : AES암호화 알고리즘 중 가장 단순한 모드로 블록 단위로 순차적으로 암호화하는 구조이며, 한 개의 블록만 해독되면 나머지 블록도 해독이 되는 문제점이 존재한다. 또한 암호문이 블록의 배수가 되기 때문에 복호화 후 평문을 알기 위해서 패딩(Padding)을 해야한다.
+
+![Ecb_encryption](https://user-images.githubusercontent.com/67867993/141350181-feabddbc-0940-44ac-95c4-4a219e9f2c45.png)
+
+
+- CBC(Cipher Block Chaining) Mode : AES암호화 알고리즘의 블록 암호화 운영 모드 중 보안성이 가장 높은 암호화 방법으로 많이 사용되며 평문의 각 블록은 XOR 연산을 통해 이전 암호문과 연산되고, 첫 번째 암호문에 대해서는 IV(Initial Vector)가 암호문 대신 사용된다. 이때 IV는 제 2의 키가 될 수 있으며 암호문이 블록의 배수가 되기 때문에 복호화 후 평문을 얻기 위해서 패딩(Padding)을 해야만 하며, 암호화가 병렬 처리가 아닌 순차적으로 수행이 되어야만 한다.
+
+![Cbc_encryption](https://user-images.githubusercontent.com/67867993/141350102-e1b7e6c2-9140-4457-a92e-ec7154450276.png)
+
+
