@@ -1,2 +1,2 @@
-# Apasys-Image_Cryptography
-암호학 기법 정리
+# Apasys-AES_Cryptography
+AES 암호화 기법 정리
